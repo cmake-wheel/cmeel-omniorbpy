@@ -20,6 +20,7 @@ homepage = "https://github.com/cmake-wheel/cmeel-omniorbpy"
 repository = "https://github.com/cmake-wheel/cmeel-omniorbpy.git"
 
 [tool.cmeel]
+build-number = 0
 run-tests = false
 
 [tool.tomlsort]
