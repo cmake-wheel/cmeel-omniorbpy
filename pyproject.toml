@@ -18,6 +18,7 @@ version = "4.3.1"
 [project.urls]
 homepage = "https://github.com/cmake-wheel/cmeel-omniorbpy"
 repository = "https://github.com/cmake-wheel/cmeel-omniorbpy.git"
+upstream = "https://omniorb.sourceforge.io/"
 
 [tool.cmeel]
 build-number = 0
