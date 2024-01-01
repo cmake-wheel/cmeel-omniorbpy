@@ -1,13 +1,13 @@
 [build-system]
 build-backend = "cmeel"
 requires = [
-  "cmeel[build]",
   "cmeel-omniorb[build] ~= 4.3.1",
+  "cmeel[build]"
 ]
 
 [project]
 dependencies = [
-  "cmeel-omniorb ~= 4.3.1",
+  "cmeel-omniorb ~= 4.3.1"
 ]
 description = "cmeel distribution for omniORB"
 license = "LGPL-2.0-or-later"

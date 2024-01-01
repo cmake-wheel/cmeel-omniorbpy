@@ -10,7 +10,8 @@ project(cmeel-${NAME} VERSION ${VERSION})
 
 find_package(Python REQUIRED COMPONENTS Interpreter)
 
-execute_process(COMMAND "${Python_EXECUTABLE}" "-m" "cmeel" "cmake" OUTPUT_VARIABLE CMEEL_PREFIX)
+execute_process(COMMAND "${Python_EXECUTABLE}" "-m" "cmeel" "cmake"
+                OUTPUT_VARIABLE CMEEL_PREFIX)
 string(STRIP "${CMEEL_PREFIX}" CMEEL_PREFIX)
 message(STATUS "cmeel prefix: ${CMEEL_PREFIX}.")
 
