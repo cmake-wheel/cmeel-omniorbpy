@@ -8,9 +8,9 @@ set(SHA256 a709c3c77b9c6b08616e1c9e12a5a9b9d5ccc1f2dcf6f647f205018d77f819a7)
 
 project("cmeel-${NAME}" VERSION "${VERSION}")
 
-find_package(Python REQUIRED COMPONENTS Interpreter)
+find_package(Python3 REQUIRED COMPONENTS Interpreter)
 
-execute_process(COMMAND "${Python_EXECUTABLE}" "-m" "cmeel" "cmake"
+execute_process(COMMAND "${Python3_EXECUTABLE}" "-m" "cmeel" "cmake"
                 OUTPUT_VARIABLE CMEEL_PREFIX)
 string(STRIP "${CMEEL_PREFIX}" CMEEL_PREFIX)
 message(STATUS "cmeel prefix: ${CMEEL_PREFIX}.")
